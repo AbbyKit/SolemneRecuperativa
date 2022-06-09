@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <ul>
+    <li><h1>Ingresa tus datos</h1>
+    <h3>* Datos Obligatorios</h3></li>
+</ul>
+    <form class="formulary" action="inituser.php" method="post">
+        <div class="container">
+            <label class="labelform">
+                Nombre
+            </label>
+            <div class="wrapperinput">
+                <input 
+                    type="text"
+                    name="nombre"
+                    placeholder="Juan Perez"
+                    class="inputform"
+                    required
+                >
+                <span class="requireddecorator"></span>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <label class="labelform">
+                E-mail
+            </label>
+            <div class="wrapperinput">
+                <input 
+                    type="email"
+                    name="correo"
+                    placeholder="email@dominio.com"
+                    class="inputform"
+                    required
+                >
+                <span class="requireddecorator"></span>
+            </div>
+        </div>
+        <div class="container">
+            <label class="labelform">
+                Clave
+            </label>
+            <div class="wrapperinput">
+                <input 
+                    type="password"
+                    name="contra"
+                    maxlength="6"
+                    placeholder="******"
+                    required
+                    class="inputform"
+                >
+                <span class="requireddecorator"></span>
+            </div>
+        </div>
+        <button class="submit">Ingresar</button>
+    </form>
+
+</body>
+
+</html>
